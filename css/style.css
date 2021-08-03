@@ -4,7 +4,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200vh;
+    height: 400vh;
     margin: 0px;
   
   }
@@ -44,8 +44,32 @@ body{
      text-align: center;
   }
 
-  #firstPara{
-      
+  P {
+    color: rgb(183, 210, 236);
+    font-size: 20px;
+    text-align: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-size: cover;
+    display: inline-block;
+    height:20px;
+    width:170px;
+    margin-top:5px;
+    margin-left:5px;
+    
+  }
+
+  ul li {
+    margin-left:15px;
+    margin-top:5px;
+    list-style-type: square;
+    color: rgb(213, 233, 252);
+    font-size: 15px;
+  }
+ 
+  ol li {
+    margin-left:35px;
+    margin-top:10px;
+    list-style-type: upper-roman;
     color: rgb(213, 233, 252);
     font-size: 15px;
   }
