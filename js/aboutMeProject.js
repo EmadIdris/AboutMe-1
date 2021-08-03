@@ -54,6 +54,7 @@ if (choice5 === 'yes' || choice5 === 'y') {
 
 //q6
 alert ('for the next question you have to use numbers to answer');
+let attemptsQ6 = 4;
 for (let i = 0 ; i <= 4 ; i++){
    if (i !== 4) { 
     let choice6 = prompt('In your opinion how old am I?');
@@ -62,18 +63,40 @@ for (let i = 0 ; i <= 4 ; i++){
          trueAnsCounter++;
          i = 4;
      } else if (choice6 > 20 ) {
-       alert ('your answer is wrong it is higher than my age');
+        attemptsQ6--;    
+        alert ('your answer is wrong it is higher than my age, attempts left: ' + attemptsQ6);
      } else if (choice6 < 20 ) {
-        alert ('your answer is wrong it is lower than my age');
+        attemptsQ6--; 
+        alert ('your answer is wrong it is lower than my age, attempts left: ' + attemptsQ6);
      }
   } else {
-    alert ('my ag is 20');
-  }  
+     alert ('my ag is 20');
+    }  
 }
 
 //q7
+alert('In this question you have to guess my fav dishes, HINT: all dishes are traditional palestine dishes');
+let myFavDishes = ['musakhan', 'kebab', 'qidreh', 'maqluba', 'mujaddara'];
+let attemptsQ7 = 6;
+let control = false;
+for (let i = 0 ; i < 6 ; i++) {
+    let userAnsw = prompt('Can you guess one of my favorite dishes?').toLowerCase();
+    for (let j = 0; j < myFavDishes.length; j++) {
+        if (userAnsw === myFavDishes[j]) {
+            alert('nice your answer is right ^_^');
+            trueAnsCounter++;
+            control = true;
+            break;
+        }    
+    }
+    if (control == true){
+        break;
+    }
+    attemptsQ7--;
+    alert('Sorry youe answer is wrong, try again, attempts left: ' + attemptsQ7 );
+    
+}
+alert('My favorite dishes are: musakhan, kebab, qidreh, maqluba, mujaddara');
 
 
-
-alert("thanks for playing " + name );
-alert("the total of correct answers is : " + trueAnsCounter);
+alert("thanks for playing " + name + " the total of correct answers is: " + trueAnsCounter);
