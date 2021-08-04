@@ -23,6 +23,10 @@ if (choice === 'yes' || choice === 'y') {
 Q1();
 
 //q2
+
+function Q2()
+{
+
 let choice2 = prompt('Do you think that I am still studing?').toLowerCase();
 if (choice2 === 'yes' || choice2 === 'y') {
     alert ('your answer is correct');
@@ -30,8 +34,13 @@ if (choice2 === 'yes' || choice2 === 'y') {
 }else if(choice2 === 'no' || choice2 === 'n'){
     alert ('your answer is wrong');
 }
+}
+Q2();
 
 //q3
+
+
+
 let choice3 = prompt('Do you think that my dream is to build my own game ?').toLowerCase();
 if (choice3 === 'yes' || choice3 === 'y') {
     alert ('your answer is correct');
