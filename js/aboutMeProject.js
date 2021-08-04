@@ -111,8 +111,8 @@ Q6();
 
 //q7
 
-// function Q7()
-// {
+function Q7()
+{
 alert('In this question you have to guess my fav dishes, HINT: all dishes are traditional palestine dishes');
 let myFavDishes = ['musakhan', 'kebab', 'qidreh', 'maqluba', 'mujaddara'];
 let attemptsQ7 = 6;
@@ -137,8 +137,8 @@ for (let i = 0 ; i < 6 ; i++) {
     }
     
 }
-// }
-// Q7();
+}
+Q7();
 
 
 alert("thanks for playing " + name + " the total of correct answers is: " + trueAnsCounter);
