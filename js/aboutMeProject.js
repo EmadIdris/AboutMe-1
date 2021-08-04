@@ -82,8 +82,8 @@ Q5();
 
 //q6
 
-// function Q6()
-// {
+function Q6()
+{
 
 alert ('for the next question you have to use numbers to answer');
 let attemptsQ6 = 4;
@@ -106,8 +106,8 @@ for (let i = 0 ; i <= 4 ; i++){
      alert ('my ag is:' + myAge);
     }  
 }
-// }
-// Q6();
+}
+Q6();
 
 //q7
 
