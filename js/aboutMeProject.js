@@ -68,8 +68,8 @@ Q4();
 
 //q5
 
-// function Q5()
-// { 
+function Q5()
+{ 
 let choice5 = prompt('Do you think that I have a github account').toLowerCase();
 if (choice5 === 'yes' || choice5 === 'y') {
     alert ('your answer is correct');
@@ -77,8 +77,8 @@ if (choice5 === 'yes' || choice5 === 'y') {
 }else if(choice5 === 'no' || choice5 === 'n'){
     alert ('your answer is wrong');   
 }
-// }
-// Q5();
+}
+Q5();
 
 //q6
 
