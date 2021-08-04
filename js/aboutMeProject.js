@@ -52,7 +52,10 @@ if (choice3 === 'yes' || choice3 === 'y') {
 }
 Q3();
 
-//q4
+
+    //q4
+function Q4()
+{ 
 let choice4 = prompt('Do you think that I am a software engineer').toLowerCase();
 if (choice4 === 'yes' || choice4 === 'y') {
     alert ('your answer is correct');
@@ -60,8 +63,13 @@ if (choice4 === 'yes' || choice4 === 'y') {
 }else if(choice4 === 'no' || choice4 === 'n'){
     alert ('your answer is wrong');
 }
+}
+Q4();
 
 //q5
+
+// function Q5()
+// { 
 let choice5 = prompt('Do you think that I have a github account').toLowerCase();
 if (choice5 === 'yes' || choice5 === 'y') {
     alert ('your answer is correct');
@@ -69,8 +77,14 @@ if (choice5 === 'yes' || choice5 === 'y') {
 }else if(choice5 === 'no' || choice5 === 'n'){
     alert ('your answer is wrong');   
 }
+// }
+// Q5();
 
 //q6
+
+// function Q6()
+// {
+
 alert ('for the next question you have to use numbers to answer');
 let attemptsQ6 = 4;
 let myAge = 20;
@@ -92,8 +106,13 @@ for (let i = 0 ; i <= 4 ; i++){
      alert ('my ag is:' + myAge);
     }  
 }
+// }
+// Q6();
 
 //q7
+
+// function Q7()
+// {
 alert('In this question you have to guess my fav dishes, HINT: all dishes are traditional palestine dishes');
 let myFavDishes = ['musakhan', 'kebab', 'qidreh', 'maqluba', 'mujaddara'];
 let attemptsQ7 = 6;
@@ -118,7 +137,8 @@ for (let i = 0 ; i < 6 ; i++) {
     }
     
 }
-
+// }
+// Q7();
 
 
 alert("thanks for playing " + name + " the total of correct answers is: " + trueAnsCounter);
