@@ -39,7 +39,8 @@ Q2();
 
 //q3
 
-
+function Q3()
+{
 
 let choice3 = prompt('Do you think that my dream is to build my own game ?').toLowerCase();
 if (choice3 === 'yes' || choice3 === 'y') {
@@ -48,6 +49,8 @@ if (choice3 === 'yes' || choice3 === 'y') {
 }else if(choice3 === 'no' || choice3 === 'n'){
     alert ('your answer is wrong');
 }
+}
+Q3();
 
 //q4
 let choice4 = prompt('Do you think that I am a software engineer').toLowerCase();
