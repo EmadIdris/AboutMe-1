@@ -55,22 +55,23 @@ if (choice5 === 'yes' || choice5 === 'y') {
 //q6
 alert ('for the next question you have to use numbers to answer');
 let attemptsQ6 = 4;
+let myAge = 20;
 for (let i = 0 ; i <= 4 ; i++){
    if (i !== 4) { 
-    let choice6 = prompt('In your opinion how old am I?');
-     if (choice6 == 20 ) {
-         alert ('your answer is correct my age is 20');
+    let choice6 = Number(prompt('In your opinion how old am I?'));
+     if (choice6 === myAge ) {
+         alert ('your answer is correct my age is: ' + myAge);
          trueAnsCounter++;
          i = 4;
-     } else if (choice6 > 20 ) {
+     } else if (choice6 > myAge ) {
         attemptsQ6--;    
         alert ('your answer is wrong it is higher than my age, attempts left: ' + attemptsQ6);
-     } else if (choice6 < 20 ) {
+     } else if (choice6 < myAge ) {
         attemptsQ6--; 
         alert ('your answer is wrong it is lower than my age, attempts left: ' + attemptsQ6);
      }
   } else {
-     alert ('my ag is 20');
+     alert ('my ag is:' + myAge);
     }  
 }
 
@@ -94,9 +95,12 @@ for (let i = 0 ; i < 6 ; i++) {
     }
     attemptsQ7--;
     alert('Sorry youe answer is wrong, try again, attempts left: ' + attemptsQ7 );
+    if (i === 5){
+        alert('My favorite dishes are: musakhan, kebab, qidreh, maqluba, mujaddara');
+    }
     
 }
-alert('My favorite dishes are: musakhan, kebab, qidreh, maqluba, mujaddara');
+
 
 
 alert("thanks for playing " + name + " the total of correct answers is: " + trueAnsCounter);
