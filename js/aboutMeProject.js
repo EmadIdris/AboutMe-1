@@ -8,6 +8,10 @@ alert ("We will play a quick guessing game about me, to answer plz type \"yes , 
 let trueAnsCounter = 0;
 
 //q1
+function Q1()
+{
+
+
 let choice = prompt('Do you think that my birthday is 30/Dec years old ?').toLowerCase();
 if (choice === 'yes' || choice === 'y') {
     alert ('your answer is wrong');
@@ -15,6 +19,8 @@ if (choice === 'yes' || choice === 'y') {
     alert ('your answer is correct');
     trueAnsCounter++;
 }
+} 
+Q1();
 
 //q2
 let choice2 = prompt('Do you think that I am still studing?').toLowerCase();
